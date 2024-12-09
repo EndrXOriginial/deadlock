@@ -1,0 +1,21 @@
+.nav {
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-content-ul {
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 10px 0;
+
+            a {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

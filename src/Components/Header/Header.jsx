@@ -1,7 +1,6 @@
 import './header.css';
 
 export const Header = () => {
-
     return (
         <nav className="nav">
             <div className="wrapper nav-content">
