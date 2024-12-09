@@ -1,5 +1,6 @@
 import './header.css';
 
+// Menu component with manual inputs. Will upgrade to a dynamic menu from the App.js later.
 export const Header = () => {
     return (
         <nav className="nav">
