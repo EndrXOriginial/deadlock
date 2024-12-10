@@ -37,13 +37,13 @@
     }
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 1025px) {
     .hero {
         .hero-media .hero-media-img {
             width: 100%;
             height: auto;
         }
-        
+
         .hero-content {
             justify-content: center;
             padding: 0;
