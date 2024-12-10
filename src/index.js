@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./Components/App";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { Home } from "./Pages/Home";
-import { Hero } from "./Components/Hero/Hero";
+import { Heroes } from "./Pages/Heroes";
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Heroes",
-    element: <Hero />,
+    element: <Heroes />,
   },
   // TO DO: Add when create new components
 ]);
