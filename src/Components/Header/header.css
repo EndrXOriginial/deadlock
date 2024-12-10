@@ -1,6 +1,7 @@
 /* Currently basic HTML. Will upgrade to the dropdown menu later when the design is done */
-
+/* Currently set the nav to "display: none" to work on the homepage until we put the nav in absolute */
 .nav {
+    display: none;
     .nav-content {
         display: flex;
         justify-content: space-between;
