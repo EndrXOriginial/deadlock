@@ -3,12 +3,28 @@
     width: 100dvw;
     height: 100dvh;
 
+    overflow: hidden;
+
     .hero-media {
+        z-index: 0;
+
         position: absolute;
         top: 0;bottom: 0;right: 0;left: 0;
+        display: flex;
+        justify-content: center;
+
+        .hero-media-img {
+            height: 100%;
+        }
     }
 
     .hero-content {
+        position: relative;
+        z-index: 1;
+
+        color: var(--white);
+        text-shadow: 3px 5px 10px #000;     
+
         width: 100%;
         height: 100%;
 
@@ -21,8 +37,13 @@
     }
 }
 
-@media screen {
+@media screen and (min-width: 730px) {
     .hero {
+        .hero-media .hero-media-img {
+            width: 100%;
+            height: auto;
+        }
+        
         .hero-content {
             justify-content: center;
             padding: 0;
