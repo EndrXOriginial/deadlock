@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./Components/App";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router";
 import { Home } from "./Pages/Home";
 import { Heroes } from "./Pages/Heroes";
+import { Header } from "./Components/Header/Header";
+import { Footer } from "./Components/Footer/Footer";
+import { RouterLayout } from "./RouterLayout";
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -19,11 +22,23 @@ const router = createBrowserRouter([
   // TO DO: Add when create new components
 ]);
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//   </React.StrictMode>
+// );
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<RouterLayout />} >
+        <Route path="/" element={<Home />} />
+        <Route path="/heroes" element={<Heroes />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
