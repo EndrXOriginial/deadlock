@@ -5,8 +5,6 @@ import App from "./Components/App";
 import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router";
 import { Home } from "./Pages/Home";
 import { Heroes } from "./Pages/Heroes";
-import { Header } from "./Components/Header/Header";
-import { Footer } from "./Components/Footer/Footer";
 import { RouterLayout } from "./RouterLayout";
 // import reportWebVitals from './reportWebVitals';
 
@@ -36,6 +34,8 @@ root.render(
       <Route element={<RouterLayout />} >
         <Route path="/" element={<Home />} />
         <Route path="/heroes" element={<Heroes />} />
+        {/* <Route path="/items" element={<Items />} /> */}
+        {/* <Route path="/guide" element={<Guide />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>

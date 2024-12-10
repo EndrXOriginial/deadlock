@@ -9,9 +9,9 @@ export const Header = () => {
                 <a href="*" className="logo"><img src="" alt="Logo from the game Deadlock" /></a>
                 <ul className="nav-content-ul">
                     <li className="nav-content-li"><Link to="/">Home</Link></li>
-                    <li className="nav-content-li"><Link to="/Items">Items</Link></li>
-                    <li className="nav-content-li"><Link to="/Heroes">Heroes</Link></li>
-                    <li className="nav-content-li"><Link to="/Guide">Guide</Link></li>
+                    <li className="nav-content-li"><Link to="/items">Items</Link></li>
+                    <li className="nav-content-li"><Link to="/heroes">Heroes</Link></li>
+                    <li className="nav-content-li"><Link to="/guide">Guide</Link></li>
                 </ul>
             </div>
         </nav>
