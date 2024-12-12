@@ -1,3 +1,41 @@
 .footer {
-    background: #721;
+    background: var(--gray-500);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logo {
+    display: inline-block;
+    width: 80vw;
+    margin: 90px 0 48px 0
+}
+
+.line {
+    border-bottom: 1px solid #888;
+    width: 80vw;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.footerText p {
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+a,  p {
+    display: inline-block !important;
+}
+
+.link {
+    margin-bottom: 16px;
+    font-family: var(--ff-ubuntu);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
