@@ -1,5 +1,5 @@
 import { Hero } from "../Components/Hero/Hero";
-const { icons, gallery } = require('./../assets/images/imageFetcher');
+const { gallery } = require('./../assets/images/imageFetcher');
 
 //Page for the home page of the site.
 export const Home = () => {
