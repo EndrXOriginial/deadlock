@@ -44,6 +44,7 @@
   --purple-800: #342E3B;
 
   --shadow: 0 2px 4px var(--black);
+  --dark-linear-gradiant: linear-gradient(to top, var(--gray-700), rgba(23, 23, 23, 0));
 
   
   /*

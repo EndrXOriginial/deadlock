@@ -16,6 +16,14 @@
         .hero-media-img {
             height: 100%;
         }
+
+        .hero-media-filter {
+            z-index: 2;
+            position: absolute;
+            left: 0;right: 0;bottom: 0;top: 40%;
+
+            background: var(--dark-linear-gradiant);
+        }
     }
 
     .hero-content {
@@ -39,6 +47,7 @@
 
 @media screen and (min-width: 1025px) {
     .hero {
+        width: 100%;
         .hero-media .hero-media-img {
             width: 100%;
             height: auto;
