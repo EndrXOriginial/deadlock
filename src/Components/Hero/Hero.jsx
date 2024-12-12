@@ -1,5 +1,4 @@
 import './hero.css';
-import corni from '../../assets/images/corni.jpg';
 const {icons} = require('./../../assets/images/imageFetcher');
 
 // The parent component should give the Hero component a 'title' props, a 'subtitle' props.
