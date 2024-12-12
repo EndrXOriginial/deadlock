@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { Home } from "./Pages/Home";
 import { Heroes } from "./Pages/Heroes";
 import { RouterLayout } from "./RouterLayout";
+import { SingleHero } from "./Pages/SingleHero";
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -17,9 +18,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/Heroes",
+        path: "/heroes",
         element: <Heroes />,
       },
+      {
+        path: "/heroes/:name",
+        element: <SingleHero />,
+      }
       // TO DO: Add when create new components
     ],
   },
