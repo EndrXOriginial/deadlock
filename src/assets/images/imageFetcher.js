@@ -73,6 +73,11 @@ const inGameModel = {
     'yamato': require('./heroes/inGameModel/Yamato.png'),
 }
 
+const gallery = {
+    'midSunset': require('./gallery/midSunset.jpg'),
+    'spawnShop': require('./gallery/spawnShop.jpg'),
+}
+
 // Every images has been imported already. 
 // Just require the module and use the name as key to get the image
 
@@ -80,4 +85,5 @@ module.exports = {
     splashArt,
     mapIcon,
     inGameModel,
+    gallery,
 }
