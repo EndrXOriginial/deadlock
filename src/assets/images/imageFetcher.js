@@ -78,6 +78,11 @@ const gallery = {
     'spawnShop': require('./gallery/spawnShop.jpg'),
 }
 
+const icons = {
+    'fullLogo': require('./../icons/fullLogo.png'),
+    'logo': require('./../icons/logo.svg'),
+}
+
 // Every images has been imported already. 
 // Just require the module and use the name as key to get the image
 
@@ -86,4 +91,5 @@ module.exports = {
     mapIcon,
     inGameModel,
     gallery,
+    icons,
 }

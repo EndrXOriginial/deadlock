@@ -1,8 +1,9 @@
 import './hero.css';
 import corni from '../../assets/images/corni.jpg';
-const { splashArt, gallery } = require('../../assets/images/imageFetcher');
+const { splashArt, gallery, icons } = require('../../assets/images/imageFetcher');
 
-export const Hero = () => {
+export const Hero = ({content}) => {
+    console.log(gallery['midSunset'])
     return (
         <div className="hero">
             <div className="hero-media">
@@ -10,8 +11,10 @@ export const Hero = () => {
                 <img src={gallery['midSunset']} alt="background of the hero" className="hero-media-img" />
             </div>
             <div className="hero-content">
-                <h1 className="hero-content-title">Pickled</h1>
-                <p className="hero-content-subtitle">Il aime quand on y mange le pickle</p>
+                {
+                    content.title === 'fullLogo' || content.title === 'logo' ? <img src={icons[content.title]} alt='Logo of the game' /> : <h1 className="hero-content-title">{content.title}</h1>
+                }
+                <p className="hero-content-subtitle">{content.subtitle}</p>
             </div>
         </div>
     );

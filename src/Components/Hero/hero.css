@@ -42,6 +42,10 @@
         align-items: center;
 
         padding-bottom: 4rem;
+
+        .hero-content-subtitle {
+            margin-top: 8px;
+        }
     }
 }
 
