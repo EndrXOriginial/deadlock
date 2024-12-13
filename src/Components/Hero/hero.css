@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
 
     overflow: hidden;
@@ -20,9 +20,9 @@
         .hero-media-filter {
             z-index: 2;
             position: absolute;
-            left: 0;right: 0;bottom: 0;top: 40%;
+            left: 0;right: 0;bottom: 0;top: -15rem;
 
-            background: var(--dark-linear-gradiant);
+            background: var(--dark-radial-gradiant);
         }
     }
 
@@ -46,6 +46,10 @@
         .hero-content-subtitle {
             margin-top: 8px;
         }
+    }
+
+    .mid {
+        justify-content: center !important;
     }
 }
 

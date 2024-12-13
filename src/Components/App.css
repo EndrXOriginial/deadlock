@@ -35,6 +35,7 @@
   --green-500: #659818;
   --green-600: #4D7214;
   --green-700: #436310;
+  --green-800: #1e2c07;
   
   /* Purple and all it's attitude */
   --purple-400: #C288F0;
@@ -42,9 +43,11 @@
   --purple-600: #623585;
   --purple-700: #552D74;
   --purple-800: #342E3B;
+  --purple-900: #20112c;
 
   --shadow: 0 2px 4px var(--black);
   --dark-linear-gradiant: linear-gradient(to top, var(--gray-700), rgba(23, 23, 23, 0));
+  --dark-radial-gradiant: radial-gradient(circle, rgba(23,23,23,0) 10%, rgba(23,23,23,0.4) 50%, rgba(23,23,23,1) 80%);
 
   
   /*
@@ -60,18 +63,23 @@
 /* HEADINGS */
 h1, h2, h3, h4 {
   color: var(--beige-300);
+  
+  font-family: var(--ff-rakkas);
 }
 
 h1 {
-  font-family: var(--ff-rakkas);
   font-size: 4.5rem;
   line-height: 3.5rem;
 }
 
 h2 {
-  font-family: var(--ff-rakkas);
   font-size: 2rem;
   line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 
@@ -96,6 +104,9 @@ p {
 
 
 /* SETTINGS */
+body {
+  background: var(--gray-700);
+}
 
 .wrapper {
   width: 90dvw;
@@ -106,4 +117,32 @@ a {
   display: block;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+.link {
+  color: var(--gray-200);
+  font-family: var(--ff-ubuntu);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.isLoading {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radial-filter {
+  background: var(--dark-radial-gradiant);
+  position: absolute;
+  top: 0;bottom: 0;left: 0;right: 0;
+}
+
+.linear-filter {
+  background: var(--dark-linear-gradiant);
+  position: absolute;
+  top: 0;bottom: 0;right: 0;left: 0;
 }

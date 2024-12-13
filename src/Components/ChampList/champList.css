@@ -1,0 +1,13 @@
+.champList {
+    position: relative;
+    padding-bottom: 1.5rem;
+
+    .champList-content {
+        margin-top: -10rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

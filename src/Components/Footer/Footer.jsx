@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div className="wrapper footer-content">
-                <div className='link-wrapper wrapper'>
+                <div className='link-wrapper'>
                     <img src={icons['fullLogo']} className='logo'></img>
                     <Link className='link' to='/'>Homepage</Link>
                     <Link className='link' to='/heroes'>Heroes</Link>

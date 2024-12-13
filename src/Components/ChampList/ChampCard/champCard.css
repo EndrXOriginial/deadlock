@@ -1,0 +1,32 @@
+.champCard-link {
+    display:inline-block;
+    width: 49%;
+}
+
+.champCard {
+    position: relative;
+
+    .champCard-media {
+        position: relative;
+
+        .champCard-media-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .champCard-content {
+        position: absolute;
+        bottom: 4.25rem;left: 0.5rem;right: 0.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+/* .champCard-link:hover {
+    width: 69%;
+}
+
+.champCard-link:hover ~ .champCard-link {
+    width: 30%;
+} */

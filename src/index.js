@@ -7,6 +7,7 @@ import { Home } from "./Pages/Home";
 import { Heroes } from "./Pages/Heroes";
 import { RouterLayout } from "./RouterLayout";
 import { SingleHero } from "./Pages/SingleHero";
+import { Items } from "./Pages/Items";
 // import reportWebVitals from './reportWebVitals';
 export const baseURL = 'https://assets.deadlock-api.com/v2';
 
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/heroes/:id",
         element: <SingleHero />,
-      }
+      },
+      {
+        path: '/items',
+        element: <Items />
+      },
       // TO DO: Add when create new components
     ],
   },
