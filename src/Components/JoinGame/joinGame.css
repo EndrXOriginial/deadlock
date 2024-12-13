@@ -1,17 +1,58 @@
 .joinGame {
-    z-index: 1;
     position: relative;
     width: 100%;
     height: 60dvh;
     overflow: hidden;
 
     .joinGame-media {
-        z-index: 2;
         position: absolute;
         top: 0;bottom: 0;left: 0;right: 0;
+        display: flex;
+        justify-content: center;
 
         img {
             height: 100%;
+        }
+    }
+
+    .joinGame-content {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .joinGame-content-title {
+            color: var(--beige-300);
+            font-family: var(--ff-rakkas);
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: var(--shadow);
+        }
+
+        .joinGame-content-subtitle {
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            text-shadow: var(--shadow);
+        }
+
+        .joinGame-content-link {
+            display: flex;
+            align-items: center;
+
+            padding: 1rem 2rem;
+
+            border: 1px solid var(--beige-300);
+            border-radius: 0.5rem;
+
+            p {
+                margin-right: 1rem;
+            }
         }
     }
 }

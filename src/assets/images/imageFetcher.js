@@ -107,6 +107,7 @@ const gallery = {
 
 const icons = {
     'fullLogo': require('./../icons/fullLogo.png'),
+    'steamLogo': require('./../icons/steamLogo.png'),
 }
 
 const weaponItems = {

@@ -136,6 +136,7 @@ a {
 }
 
 .radial-filter {
+  z-index: 1;
   background: var(--dark-radial-gradiant);
   position: absolute;
   top: 0;bottom: 0;left: 0;right: 0;
