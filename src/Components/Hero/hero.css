@@ -13,6 +13,19 @@
         display: flex;
         justify-content: center;
 
+        .hero-media-champ {
+            position: absolute;
+            top: 10%;bottom: 11rem;left: 0;right: 0;
+
+            display: flex;
+            justify-content: center;
+
+            .hero-media-champ-img {
+                height: 100%;
+                width: auto;
+            }
+        }
+
         .hero-media-img {
             height: 100%;
         }
@@ -41,7 +54,7 @@
         justify-content: flex-end;
         align-items: center;
 
-        padding-bottom: 4rem;
+        padding-bottom: 6rem;
 
         .hero-content-subtitle {
             margin-top: 8px;
@@ -53,7 +66,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1440px) {
     .hero {
         width: 100%;
         .hero-media .hero-media-img {

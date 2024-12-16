@@ -1,5 +1,5 @@
 import { useParams } from "react-router"
-import { splashArt } from "../assets/images/imageFetcher"
+import { gallery, splashArt } from "../assets/images/imageFetcher"
 import { Hero } from "../Components/Hero/Hero"
 import { useState } from "react";
 import { baseURL } from "../index";
@@ -20,8 +20,7 @@ export const SingleHero = () => {
 
     return (
         <>
-        single hero
-        <Hero title={heroName} subtitle={heroDesc} bgImage={splashArt[heroName]} />
+        <Hero title={heroName} subtitle={heroDesc} bgImage={gallery['mainMenu']} champImg={splashArt[heroName]} />
         </>
     )
 }

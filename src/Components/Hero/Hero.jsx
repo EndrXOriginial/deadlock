@@ -1,16 +1,19 @@
 import './hero.css';
-const {icons} = require('./../../assets/images/imageFetcher');
+const {icons, splashArt} = require('./../../assets/images/imageFetcher');
 
 // The parent component should give the Hero component a 'title' props, a 'subtitle' props.
 // For the bg image, simply put the desired image.
 // If you want the logo use 'fullLogo' or 'logo' in the title.
-export const Hero = ({title, subtitle, bgImage, mid=false}) => {
+export const Hero = ({title, subtitle, bgImage, mid=false, champImg=''}) => {
+
     return (
         <div className="hero">
             <div className="hero-media">
                 <div className="hero-media-filter"></div>
                 <img src={bgImage} alt="background of the hero" className="hero-media-img" />
-
+                {
+                    champImg === '' ? <></> : <div className="hero-media-champ"><img className='hero-media-champ-img' src={`${champImg}`} alt={`Splash of ${title}`} /></div>
+                }
             </div>
             <div className={mid ? 'hero-content mid' : 'hero-content'}>
                 {
