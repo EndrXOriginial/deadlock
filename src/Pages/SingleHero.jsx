@@ -3,6 +3,7 @@ import { gallery, splashArt } from "../assets/images/imageFetcher"
 import { Hero } from "../Components/Hero/Hero"
 import { useState } from "react";
 import { baseURL } from "../index";
+import { Abilities } from "../Components/Abilities/Abilities";
 
 
 export const SingleHero = () => {
@@ -13,7 +14,6 @@ export const SingleHero = () => {
     fetch(`${baseURL}/heroes/${id}`).then(res => {
         return res.json();
     }).then(data => {
-        console.log(data);
         setHeroName(data.name);
         setHeroDesc(data.description.role);
     })
@@ -21,6 +21,7 @@ export const SingleHero = () => {
     return (
         <>
         <Hero title={heroName} subtitle={heroDesc} bgImage={gallery['mainMenu']} champImg={splashArt[heroName]} />
+        <Abilities heroId={id} />
         </>
     )
 }

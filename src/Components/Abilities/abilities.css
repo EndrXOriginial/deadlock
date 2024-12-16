@@ -1,0 +1,33 @@
+section.abilities {
+    width: 100%;
+
+    .abilities-video {
+        border-radius: 10px;
+    }
+
+    .abilities-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .abilities-list-icon {
+            background: var(--beige-400);
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            padding: 1rem;
+            margin: 0 2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+            img {
+                filter: invert(1) opacity(0.75);
+                height: 100%;
+            }
+        }
+    }
+}
