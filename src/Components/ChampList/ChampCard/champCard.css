@@ -1,32 +1,173 @@
+
 .champCard-link {
-    display:inline-block;
+    display: inline-block;
     width: 49%;
-}
-
-.champCard {
-    position: relative;
-
-    .champCard-media {
+    
+    .champCard {
         position: relative;
+        overflow-x: clip;
+        margin-bottom: 5rem;
 
-        .champCard-media-img {
-            width: 100%;
-            height: auto;
+
+        .champCard-media-1 {
+            position: relative;
+            height: 30vh;
+            border-radius: 10px;
+            border: 2px solid #434B3E;
+            overflow: hidden;
+
+            .champCard-media-img-1 {
+                height: 100%;
+                width: auto;
+                border-radius: 10px;
+            }
+        }
+
+        .champCard-media-1-border {
+            position: absolute;
+            top: 0;bottom: 0;right: 0;left: 0;
+            border-left: 2px solid #434B3E;
+            border-right: 2px solid #434B3E;
+            border-bottom: 2px solid #434B3E;
+            border-radius: 10px;
+
+            z-index: 20;
+            
+        }
+
+        .champCard-media-2 {
+            position: absolute;
+            top: -3.5rem;bottom: 0;
+            z-index: 2;
+
+            .champCard-media-img-2 {
+                height: 100%;
+            }
+        }
+
+
+        .champCard-content {
+            position: absolute;
+            bottom: 4.25rem;left: 0.5rem;right: 0.5rem;
+            z-index: 10;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
-
-    .champCard-content {
-        position: absolute;
-        bottom: 4.25rem;left: 0.5rem;right: 0.5rem;
-        text-align: center;
-        text-transform: uppercase;
-    }
 }
 
-/* .champCard-link:hover {
-    width: 69%;
+.abrams {
+    left: -9.5rem;
+    right: 0;
 }
 
-.champCard-link:hover ~ .champCard-link {
-    width: 30%;
-} */
+.greytalon {
+    left: -6.5rem;
+    right: 0;
+}
+
+.bebop {
+    left: -8rem;
+    right: 0;
+}
+
+.dynamo {
+    top: -3rem !important;
+    left: -16rem;
+    right: 0;
+}
+
+.haze {
+    left: -2.5rem;
+    right: 0;
+}
+
+.infernus {
+    left: -15rem;
+    right: 0;
+}
+
+.ivy {
+    top: -11rem !important;
+    left: -13rem;
+    right: 0;
+}
+
+.kelvin {
+    left: -9.2rem;
+    right: 0;
+}
+
+.ladygeist {
+    left: -9rem;
+    right: 0;
+}
+
+.lash {
+    left: -6rem;
+    right: 0;
+}
+
+.mcginnis {
+    left: -1rem;
+    right: 0;
+}
+
+.mirage {
+    left: -9rem;
+    right: 0;
+}
+
+.mokrill {
+    left: -11rem;
+    right: 0;
+}
+
+.paradox {
+    left: -9rem;
+    right: 0;
+}
+
+.pocket {
+    left: -9.5rem;
+    right: 0;
+}
+
+.seven {
+    left: -12.5rem;
+    right: 0;
+}
+
+.shiv {
+    top: -2rem !important;
+    left: -7rem;
+    right: 0;
+}
+
+.vindicta {
+    left: -11rem;
+    right: 0;
+}
+
+.viscous {
+    left: -5rem;
+    right: 0;
+}
+
+.warden {
+    /* top: -3rem !important; */
+    left: -8rem;
+    right: 0;
+}
+
+.wraith {
+    top: -4.5rem !important;
+    left: -10rem;
+    right: 0;
+}
+
+.yamato {
+    top: -3rem !important;
+    left: -8.5rem;
+    right: 0;
+}
