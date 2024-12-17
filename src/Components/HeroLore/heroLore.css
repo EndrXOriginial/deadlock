@@ -1,0 +1,17 @@
+.lore {
+    padding-bottom: 5rem;
+
+    .lore-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h3 {
+            text-wrap: wrap;
+        }
+
+        img {
+            margin-right: .5rem;
+        }
+    }
+}

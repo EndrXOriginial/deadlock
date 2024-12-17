@@ -56,6 +56,53 @@
     }
 }
 
+.full {
+    width: 100% !important;
+
+    .champCard {
+        margin-bottom: 1rem;
+    }
+
+    .champCard-content {
+        bottom: 0 !important;
+        top: 0;
+        left: 25% !important;
+        right: 25% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-wrap: wrap;
+
+        .champCard-content-name {
+            width: 100%;
+            line-height: 2rem;
+        }
+
+        span {
+            padding-top: .25rem;
+            font-size: 3rem;
+        }
+
+        button {
+            background: #19123B;
+            border: 1px solid #8079AF;
+            border-radius: .5rem;
+            padding: .75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: .5rem;
+                width: 1.5rem;
+            }
+
+            p {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
 .abrams {
     left: -9.5rem;
     right: 0;

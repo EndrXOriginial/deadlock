@@ -108,6 +108,10 @@ const gallery = {
 const icons = {
     'fullLogo': require('./../icons/fullLogo.png'),
     'steamLogo': require('./../icons/steamLogo.png'),
+    'radius': require('./../icons/radiusIcon.png'),
+    'duration': require('./../icons/duration.png'),
+    'cooldown': require('./../icons/cooldown.png'),
+    'mobalytics': require('./../icons/Mobalytics.png'),
 }
 
 const weaponItems = {

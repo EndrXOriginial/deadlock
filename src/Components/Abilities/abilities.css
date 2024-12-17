@@ -1,16 +1,22 @@
 section.abilities {
     width: 100%;
+    padding: 1.5rem 0;
 
     .abilities-video {
+        width: 100%;
         border-radius: 10px;
+        border: 2px solid var(--beige-300);
+        overflow: hidden;
     }
 
     .abilities-list {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 1.5rem 0;
 
         .abilities-list-icon {
+            position: relative;
             background: var(--beige-400);
             width: 5rem;
             height: 5rem;
@@ -24,9 +30,53 @@ section.abilities {
 
             overflow: hidden;
 
+            .abilities-list-icon-button {
+                position: absolute;
+                top: 0;bottom: 0;left: 0;right: 0;
+                z-index: 2;
+            }
+
             img {
                 filter: invert(1) opacity(0.75);
                 height: 100%;
+            }
+        }
+    }
+
+    .abilities-content {
+        .abilities-content-header {
+            .abilities-content-header-1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                margin: 1rem 0;
+
+                .abilities-content-state {
+                    opacity: 0.75;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+
+            .abilities-content-header-2 {
+                display: flex;
+                justify-content: flex-start;
+                margin: 1rem 0;
+
+                .abilities-info {
+                    background: var(--gray-500);
+                    padding: .25rem .5rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: .25rem;
+                    margin-right: .25rem;
+
+                    img {
+                        height: 1rem;
+                        margin-right: .25rem;
+                    }
+                }
             }
         }
     }
