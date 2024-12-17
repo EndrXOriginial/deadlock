@@ -6,7 +6,7 @@ export const ChampCard = ({champ, build=false}) => {
     const {name, id} = champ;
 
     return (
-        <Link to={build ? `https://mobalytics.gg/deadlock/builds/${name.toLowerCase()}` : `${id}`} className={build ? 'champCard-link full' : 'champCard-link'} target={build ? '_blank' : ''}>
+        <Link to={build ? `https://mobalytics.gg/deadlock/builds/${name.toLowerCase().replaceAll(' ', '-').replaceAll('&', 'and')}` : `${id}`} className={build ? 'wrapper champCard-link full' : 'champCard-link'} target={build ? '_blank' : ''}>
         <div className="champCard">
             <div className="linear-filter"></div>
             <div className="champCard-media-1-border"></div>
@@ -16,7 +16,7 @@ export const ChampCard = ({champ, build=false}) => {
             <div className={`champCard-media-2 ${name.toLowerCase().replaceAll(" ", "").replaceAll('&', '')}`}><img src={inGameModel[name]} alt={`In game model of ${name}`} className="champCard-media-img-2" /></div>
             <div className="champCard-content">
                 <h3 className="champCard-content-name">{name}{build ? <span> Builds</span> : <></> }</h3>
-                {build ? <button href={`https://mobalytics.gg/deadlock/builds/${name.toLowerCase()}`} target='_blank'>
+                {build ? <button>
                     <img src={icons['mobalytics']} alt="icon de Mobalytics" />
                     <p>Mobalytics</p>
                 </button> : <></>}

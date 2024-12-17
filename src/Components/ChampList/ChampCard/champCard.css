@@ -1,6 +1,5 @@
 
 .champCard-link {
-    display: inline-block;
     width: 49%;
     
     .champCard {
@@ -57,7 +56,6 @@
 }
 
 .full {
-    width: 100% !important;
 
     .champCard {
         margin-bottom: 1rem;

@@ -110,8 +110,8 @@ body {
 }
 
 .wrapper {
-  width: 90dvw;
-  margin: 0 auto;
+  width: 90dvw !important;
+  margin: 0 auto !important;
 }
 
 a {
