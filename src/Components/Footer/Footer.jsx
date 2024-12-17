@@ -19,7 +19,7 @@ export const Footer = () => {
                 </div>
                
             
-                <div className='footerText'>                
+                <div className='footerText p-xs'>                
                     <p>This project is a personal collaboration between friends to showcase our skills. 
                         All content is inspired by the websites <a href='https://deadlocked.wiki/'>Deadlock Wiki</a> and <a href='https://mobalytics.gg/deadlock'>Mobalytics Deadlock.</a> We do not 
                         claim ownership or rights to any logos or images used, which are included solely for illustrative purposes.
