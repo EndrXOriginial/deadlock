@@ -24,6 +24,7 @@
   --gray-900: #000100;
   
   /* Orange and all it's beautiful pulps */
+  --orange-300: #F2C685;
   --orange-400: #D08D3E;
   --orange-500: #C97A03;
   --orange-600: #80550F;
@@ -31,7 +32,7 @@
   --orange-800: #2F2201;
   
   /* Green and all it's majesty */
-  --green-300: #8DB53E;
+  --green-200: #BAEA75;
   --green-400: #74B01C;
   --green-500: #659818;
   --green-600: #4D7214;
@@ -153,4 +154,32 @@ a {
 .separator {
   margin: 3rem auto;
   border-color: #6e6e6e;
+}
+
+.none {
+  display: none;
+}
+
+.weapon {
+  background: var(--orange-400);
+}
+
+.vitality {
+  background: var(--green-400);
+}
+
+.spirit {
+  background: var(--purple-500);
+}
+
+.weaponActive {
+  background: var(--orange-300);
+}
+
+.vitalityActive {
+  background: var(--green-200);
+}
+
+.spiritActive {
+  background: var(--purple-400);
 }

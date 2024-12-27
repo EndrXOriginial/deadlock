@@ -1,0 +1,25 @@
+.items-tier-container {
+    margin-bottom: 3rem;
+    .items-tier-cost {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        img {
+            height: 2rem;
+        }
+
+        p {
+            color: var(--cyan);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    .item-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

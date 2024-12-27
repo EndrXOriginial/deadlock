@@ -112,6 +112,7 @@ const icons = {
     'duration': require('./../icons/duration.png'),
     'cooldown': require('./../icons/cooldown.png'),
     'mobalytics': require('./../icons/Mobalytics.png'),
+    'souls': require('./../icons/souls.png'),
 }
 
 const weaponItems = {
