@@ -183,3 +183,19 @@ a {
 .spiritActive {
   background: var(--purple-400);
 }
+
+.cost-div {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+
+  img {
+      height: 2rem;
+  }
+
+  p.souls-cost {
+      color: var(--cyan);
+      font-size: 2rem;
+      font-weight: bold;
+  }
+}

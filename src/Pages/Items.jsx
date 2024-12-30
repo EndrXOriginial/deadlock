@@ -27,6 +27,10 @@ export const Items = () => {
             })
     };
 
+    const closeItemModal = e => {
+        setSelectedItem(null);
+    };
+
     // The function is used to sort the tier by name and puts the Active Items at the end
     const sortTier = tier => {
         tier.sort(a => {
@@ -110,7 +114,7 @@ export const Items = () => {
         <Hero mid={true} title={'Items'} bgImage={gallery['spawnShop']} />
         <Itemslist weaponItems={weaponItems} vitalityItems={vitalityItems} spiritItems={spiritItems} handleClick={handleClick} />
         {
-            selectedItem ? <ItemInfo selectedItem={selectedItem} /> : <></>
+            selectedItem ? <ItemInfo selectedItem={selectedItem} closeItemModal={closeItemModal} /> : <></>
         }
         </>
     )

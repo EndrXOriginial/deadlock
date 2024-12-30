@@ -7,9 +7,9 @@ import './itemTier.css';
 export const ItemTier = ({tier, handleClick}) => {
     return (
         <div className="items-tier-container">
-            <div className="items-tier-cost">
+            <div className="cost-div">
                 <img src={icons['souls']} alt="icon of the souls in Deadlock" />
-                <p>{tier[0].cost}</p>
+                <p className='souls-cost'>{tier[0].cost}</p>
             </div>
             <div className="item-list">
                 {

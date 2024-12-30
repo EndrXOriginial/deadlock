@@ -1,3 +1,84 @@
 .item-info {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: 0;left: .5rem;right: .5rem;
+
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+
+    .item-info-media {
+        background: var(--orange-400);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1.5rem 2.5rem;
+
+        img.item-info-icon {
+            height: 5rem;
+            width: auto;
+            margin-right: 1rem;
+            filter: invert(1) opacity(.7);
+        }
+
+        .item-info-media-text {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                color: var(--gray-900);
+                opacity: .7;
+            }
+
+            .cost-div img {
+                height: 1rem !important;
+            }
+
+            .cost-div .souls-cost {
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    .item-info-x {
+        position: absolute;
+        z-index: 50;
+        top: 1rem;right: 1rem;
+    }
+
+    .item-info-buff {
+        background: var(--gray-700);
+
+        .item-info-state-container {
+            background: var(--gray-500);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .active-cooldown {
+                background: var(--gray-900);
+                color: var(--white);
+                font-size: 1rem;
+
+                display: flex;
+                align-items: center;
+
+                padding: .5rem 2.5rem;
+
+                img {
+                    height: 1rem;
+                    margin-right: .25rem;
+                }
+            }
+
+            p {
+                margin-left: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
 }
