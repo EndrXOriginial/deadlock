@@ -51,6 +51,14 @@
     .item-info-buff {
         background: var(--gray-700);
 
+        .item-info-buff-innate {
+            padding: 0 .75rem;
+        }
+
+        .item-info-buff-state {
+            padding: 0 .75rem;
+        }
+
         .item-info-state-container {
             background: var(--gray-500);
 

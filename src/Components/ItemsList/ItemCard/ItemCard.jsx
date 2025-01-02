@@ -1,7 +1,6 @@
 import './itemCard.css';
 
 export const ItemCard = ({item, handleClick}) => {
-    const imbueItem = ['Quicksilver Reload', 'Improved Reach', 'Superior Cooldown', 'Superior Duration', 'Surge of Power', 'Mystic Reverb']
     
     return (
         <div className="item" onClick={handleClick} id={item.id}>
@@ -12,7 +11,7 @@ export const ItemCard = ({item, handleClick}) => {
             <div className={item.is_active_item ? "active-banner" : "none"}>
                 <p className='p-xs'>Active</p>
             </div>
-            <div className={imbueItem.includes(item.name) ? "active-banner" : "none"}>
+            <div className={item.hasOwnProperty('imbue') ? "active-banner" : "none"}>
                 <p className='p-xs'>Imbue</p>
             </div>
         </div>

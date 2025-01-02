@@ -184,6 +184,10 @@ a {
   background: var(--purple-400);
 }
 
+.highlight {
+  font-weight: bolder;
+}
+
 .cost-div {
   display: flex;
   align-items: center;
