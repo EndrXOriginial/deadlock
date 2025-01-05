@@ -1,24 +1,54 @@
 /* Currently basic HTML. Will upgrade to the dropdown menu later when the design is done */
 /* Currently set the nav to "display: none" to work on the homepage until we put the nav in absolute */
 .nav {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    z-index: 99;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: var(--gray-700);
+
+    .logo {
+        position: absolute;
+        top: 1rem;left: 1rem;
+    }
+
+    .nav-x {
+        filter: invert(.9);
+
+        position: absolute;
+        top: 2rem;right: 2rem;
+    }
+
     .nav-content {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         .nav-content-ul {
             list-style: none;
+            padding: 0;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            margin: 10px 0;
-
-            a {
-                padding: 10px 15px;
+            .nav-content-li h2 {
+                padding: .75rem 0;
             }
+        }
+
+        .nav-content-policy {
+            p {
+                margin: 1rem 0
+            }
+        }
+
+        .separator {
+            width: 100%;
+            border-bottom: 2px solid var(--beige-300);
+            opacity: .2;
         }
     }
 }
