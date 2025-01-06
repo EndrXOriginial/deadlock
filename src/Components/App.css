@@ -203,3 +203,59 @@ a {
       font-weight: bold;
   }
 }
+
+.delay-1 {
+  transition-delay: .2s;
+}
+
+.delay-2 {
+  transition-delay: .4s;
+}
+
+.delay-3 {
+  transition-delay: .6s;
+}
+
+.delay-4 {
+  transition-delay: .8s;
+}
+
+[data-scrolly = 'from-left'] {
+  opacity: 0 !important;
+  transform: translateX(-5rem);
+  scale: .8;
+
+  transition: all ease-out .3s;
+
+  &.is-active {
+    opacity: 1 !important;
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+
+[data-scrolly='from-bottom'] {
+  opacity: 0;
+  transform: translateY(2rem);
+  scale: .8;
+  transition: all ease-out .3s;
+
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1;
+  }
+}
+
+[data-scrolly='from-top'] {
+  opacity: 0;
+  transform: translateY(-2rem);
+  scale: .8;
+  transition: all ease-out .3s;
+
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1;
+  }
+}
