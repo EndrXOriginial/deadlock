@@ -1,16 +1,44 @@
 /* Currently basic HTML. Will upgrade to the dropdown menu later when the design is done */
 /* Currently set the nav to "display: none" to work on the homepage until we put the nav in absolute */
+.none-visible {
+    top: -2.5rem !important;
+    left: calc(50% - 2.5rem) !important;
+
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50% !important;
+    border: 2px solid var(--beige-300);
+}
+
 .nav {
-    position: absolute;
-    width: 100%;
-    height: 100dvh;
+    position: fixed;
+    top: 0;bottom: 0;right: 0;left: 0;
     z-index: 99;
+
+    width: 100%;
+    height: 100vh;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
     background: var(--gray-700);
+    overflow: hidden;
+
+    transition: all .3s ease-in-out;
+
+    .closed-nav {
+        position: absolute;
+        bottom: .5rem;left: 0;right: 0;
+
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 40%;
+            height: auto;
+        }
+    }
 
     .logo {
         position: absolute;

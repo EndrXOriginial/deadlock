@@ -114,6 +114,7 @@ const icons = {
     'mobalytics': require('./../icons/Mobalytics.png'),
     'souls': require('./../icons/souls.png'),
     'x': require('./../icons/IconClose.png'),
+    'hamb': require('./../icons/hamb.png'),
 }
 
 const weaponItems = {
