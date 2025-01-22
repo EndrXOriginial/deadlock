@@ -7,7 +7,7 @@ export const Itemslist = ({weaponItems, vitalityItems, spiritItems, handleClick}
 
     return (
         <section className="items">
-            <div className="wrapper">
+            <div className="wrapper center">
                 <ItemType type={weaponItems} handleClick={handleClick} />
                 <hr className="line" />
                 <ItemType type={vitalityItems} handleClick={handleClick} />

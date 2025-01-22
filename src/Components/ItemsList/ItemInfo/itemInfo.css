@@ -1,6 +1,6 @@
 .item-info {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 0;left: .5rem;right: .5rem;
 
     overflow: hidden;
@@ -52,11 +52,22 @@
         background: var(--gray-700);
 
         .item-info-buff-innate {
-            padding: 0 .75rem;
+            padding: 1rem .75rem;
         }
 
         .item-info-buff-state {
-            padding: 0 .75rem;
+            padding: 1rem .75rem;
+
+            .item-info-buff-state-container {
+                background: var(--gray-500);
+                padding: .75rem 1.5rem;
+                border-radius: .5rem;
+                margin-top: 1rem;
+
+                p {
+                    margin: .25rem 0;
+                }
+            }
         }
 
         .item-info-state-container {
@@ -88,5 +99,12 @@
                 padding: .75rem 0;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .item-info {
+        right: 2rem;
+        left: auto;
     }
 }
